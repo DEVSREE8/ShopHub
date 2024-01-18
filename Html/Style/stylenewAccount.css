@@ -1,0 +1,47 @@
+body{
+    margin:0px;
+}
+.navbar{
+    background-color: #2b3336;
+    margin:0px;
+}
+.navbar>a>img{
+    height:100px;
+    width:120px;
+    margin:0px;
+}
+.regform{
+    margin-top:15px;
+    padding:10px;
+    
+}
+.regform>h2{
+    color: #2b3336;
+    font-size: 30px;
+    font-style: italic;
+    font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom:43px;
+}
+.regform>form>input{
+    margin-bottom: 20px;
+    width:400px;
+    height:25px;
+    margin-left:380px;
+    padding:5px;
+    border-radius:30px;
+    border:2px solid #2b3336;
+}
+button{
+    margin-left:500px;
+    color:white;
+    background-color: #2b3336;
+    margin-bottom:20px;
+    padding:6px;
+    width:150px;
+    border-radius: 30px;
+}
+button:hover{
+    color:#2b3336;
+    background-color:white;
+}
+

@@ -1,0 +1,281 @@
+body{
+  padding:0px;
+  background-color: #b8b4b4;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* navigation bar */
+.navbar{
+    background-color: #2b3336;
+    color:aliceblue;
+    padding:0px;
+
+}
+.container-fluid>a{
+  text-decoration:none;
+  display: inline;
+}
+.nb{
+    display:inline;
+    font-size:23px;
+    color:aliceblue;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nb:hover{
+    color:aliceblue;
+}
+.navbar-logo>a>img{
+  display: inline;
+    height:70px;
+    width:90px;
+    padding:0px;
+}
+.navbar-logo>a{
+  display: inline;
+    height:70px;
+    width:90px;
+    padding:0px;
+}
+.collapse>ul>li>a{
+    margin-left:100px;
+    color:aliceblue;
+}
+.collapse>ul>li>a:hover{
+    color:#a2a2a2;
+    font-size:20px;
+}
+.note{
+    padding:5px;
+    height: 40px;
+    color:black;
+    background-color: rgb(194, 191, 191);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+.branding>img{
+    height: 80px;
+}
+
+.main-theme{
+    height:500px;
+    width:100%;
+}
+.main-theme>img{
+    height:500px;
+    width:100%;
+}
+
+
+
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+  background-color: #e7e6e6;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  display: none; /* Hide all elements by default */
+  background-color: #ffffff;
+  margin-bottom:20px;
+  padding-bottom: 0px;
+  border:1px solid;
+  box-shadow: 10px rgb(133, 128, 128);
+  border-radius: 15px;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+/* ####################################################################################### */
+.content {
+  display:inline;
+}
+.content>img{
+  width:240px;
+  height:300px;
+  display:inline;
+}
+.contentdesc{
+  float:right;
+  width:50%;
+  display:inline;
+  margin-top:20px;
+}
+.contentdesc>h4{
+  font-style: italic;
+  font-weight:350;
+}
+.contentdesc>h2{
+  display:inline;
+  font-weight:350;
+}
+.contentdesc>del{
+  display:inline;
+  margin-left: 8px;
+}
+.contentdesc>p1{
+  color:rgb(3, 197, 3);
+  display:inline;
+  font-weight:bold;
+  margin-left: 8px;
+}
+.buynow{
+  display:block;
+  background-color: rgb(255, 221, 0);
+  color:rgb(255, 255, 255);
+  font-weight: 500;
+  padding:8px 18px;
+  margin-top:30px;
+  border:none;
+  border-radius:30px;
+}
+.buynow:hover{
+  display:block;
+  background-color: rgb(250, 250, 250);
+  color:black;
+  font-weight: 500;
+  padding:8px 20px;
+  margin-top:30px;
+  border:2px yellow solid;
+  border-radius:30px;
+}
+/* ########################################################33 */
+/* The "show" class is added to the filtered elements */
+
+/* 3 button styling */
+#myBtnContainer{
+  margin-top:10px;
+  margin-bottom:20px;
+  margin-left:10px;
+} 
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+#myBtnContainer>.btn {
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+#myBtnContainer>.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+#myBtnContainer>.btn.active {
+  background-color: #666;
+   color: white;
+}
+
+
+
+/* ORDERING */
+.container2 {
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+  display: none;
+} 
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 8px;
+}
+
+input {
+  width: calc(100% - 16px); /* Subtracting padding and border width */
+  padding:4px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.payment-method {
+  margin-bottom: 16px;
+}
+
+.image-box {
+  display: none;
+  max-width: 260px;
+  height: 200px;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+}
+
+/*Payment Styling*/
+
+#cashOnDelivery1,#cashOnDelivery2,#cashOnDelivery3,#cashOnDelivery4,#cashOnDelivery5,#cashOnDelivery6,#cashOnDelivery7,#cashOnDelivery8,#cashOnDelivery9,#cashOnDelivery10{
+  margin-right: 0px;
+  width: 40px !important;
+}
+#qrCode1,#qrCode2,#qrCode3,#qrCode4,#qrCode5,#qrCode6,#qrCode7,#qrCode8,#qrCode9,#qrCode10{
+  margin-right: 0px;
+  width: 40px !important; 
+}
+.form2 {
+  display: flex;
+  align-items: center;
+}
+.form2>label{
+  width:190px;
+  margin:0px;
+}
+.submit{
+  margin-left:45%;
+  margin-top:15px;
+  padding:6px 6px;
+  padding-top:4px;
+  width:100px;
+  border-radius:30px;
+  background-color: black;
+  color: white;
+  border:0px;
+}
+.submit:hover{
+  background-color:white;
+  border:solid 2px black;
+  color:black;
+
+}
+
+
