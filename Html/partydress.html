@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopHub: Formal Dress</title>
+    <link href="Style/styleformaldress.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand" aria-label="Second navbar example">
+      <div class="container-fluid">
+      <div class="navbar-logo"> <a href="productpage.html"><img src="Images/ShopHubLogo.png"></a></div>
+      <div class="nb">ShopHub</div>
+
+      <div class="collapse navbar-collapse" id="navbarsExample02">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="mens.html">MEN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="womens.html">WOMEN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kids.html">KIDS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- top brand -->
+  <div class="main-theme">
+    <img src="Images/Women/Party/partywear.png">
+  </div>
+
+  <!-- Filter buttons -->
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')">Show all</button>
+    <button class="btn" onclick="filterSelection('men')">Men</button>
+    <button class="btn" onclick="filterSelection('women')">Women</button>
+  </div>
+
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <!-- Men -->
+
+    <!-- 1 -->
+    <div class="column men show" onclick="showDetails(this)">
+      <div class="content">
+        <img src="Images/Men/Party/partywear1.png" alt="Man">
+      </div>
+      <div class="contentdesc">
+        <h4>HangUp Plus</h4>
+        <p>Buttoned-Up Sherwani with Pyjamas</p>
+        <h2><b>&#8377;3,000</b> </h2>
+        <del> &#8377;9,999</del>
+        <p1> 70% off</p1>
+        <button class="buynow" onclick="showDetails(event, this)">Buy Now</button>
+      </div>
+      <div class="container2">
+        <h2>Enter shipping details</h2>
+        <form class="shippingForm" id="shippingForm1">
+          <label for="address">Shipping Address:</label>
+          <input type="text" id="address1" name="address" required>
+    
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone1" name="phone" required pattern="[0-9]{10}">
+    
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity1" name="quantity" required min="1" step="1">
+        </form>
+        <br>
+        <h2>Payment Method</h2>
+        <form class="paymentForm form2">
+          <input type="radio" id="cashOnDelivery1" name="payment" value="cashOnDelivery" checked>
+          <label for="cashOnDelivery">Cash on Delivery</label>
+          <input type="radio" id="qrCode1" name="payment" value="qrCode">
+          <label for="qrCode">Pay using QR Code</label>
+        </form>
+        <div class="image-box" id="qrCodeImageBox1">
+          <img src="Images/payement/QRCode.png" alt="QR Code">
+        </div>
+        <button type="submit" class="submit">Submit</button>
+        <div class="purchased"></div>
+      </div>
+    </div>
+    <!-- Add more men columns as needed -->
+
+    <!-- Women -->
+    <!-- 2 -->
+    <div class="column women show" onclick="showDetails(this)">
+      <div class="content">
+        <img src="Images/Women/Party/partywear1.png" alt="Woman" >
+      </div>
+      <div class="contentdesc">
+        <h4>Patlani</h4>
+        <p>Women's Net Fit and Flare Maxi Dress</p>
+        <h2><b>&#8377;720</b> </h2>
+        <del> &#8377;3.299</del>
+        <p1> 78% off</p1>
+        <button class="buynow" onclick="showDetails(event, this)">Buy Now</button>
+      </div>
+      <div class="container2">
+        <h2>Enter shipping details</h2>
+        <form class="shippingForm" id="shippingForm2">
+          <label for="address">Shipping Address:</label>
+          <input type="text" id="address2" name="address" required>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone2" name="phone" required pattern="[0-9]{10}">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity2" name="quantity" required min="1" step="1">
+        </form>
+        <br>
+        <h2>Payment Method</h2>
+        <form class="paymentForm form2">
+          <input type="radio" id="cashOnDelivery2" name="payment" value="cashOnDelivery" checked>
+          <label for="cashOnDelivery">Cash on Delivery</label>
+          <input type="radio" id="qrCode2" name="payment" value="qrCode">
+          <label for="qrCode">Pay using QR Code</label>
+        </form>
+        <div class="image-box" id="qrCodeImageBox2">
+          <img src="Images/payement/QRCode.png" alt="QR Code">
+        </div>
+        <button type="submit" class="submit">Submit</button>
+        <div class="purchased"></div>
+      </div>
+    </div>
+
+<!-- 3 -->
+    <div class="column women show">
+      <div class="content">
+        <img src="Images/Women/Party/partywear2.png" alt="Woman" >
+      </div>
+      <div class="contentdesc">
+        <h4>AMIRAS</h4>
+        <p>Violet partywear embroidered Georgette semi stitched Anarkali Suit</p>
+        <h2><b>&#8377;3,516</b> </h2>
+        <del> &#8377;10,046</del>
+        <p1> 65% off</p1>
+        <button class="buynow" onclick="showDetails(event, this)">Buy Now</button>
+      </div>
+      <div class="container2">
+        <h2>Enter shipping details</h2>
+        <form class="shippingForm" id="shippingForm3">
+          <label for="address">Shipping Address:</label>
+          <input type="text" id="address3" name="address" required>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone3" name="phone" required pattern="[0-9]{10}">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity3" name="quantity" required min="1" step="1">
+        </form>
+        <br>
+        <h2>Payment Method</h2>
+        <form class="paymentForm form2">
+          <input type="radio" id="cashOnDelivery3" name="payment" value="cashOnDelivery" checked>
+          <label for="cashOnDelivery">Cash on Delivery</label>
+          <input type="radio" id="qrCode3" name="payment" value="qrCode">
+          <label for="qrCode">Pay using QR Code</label>
+        </form>
+        <div class="image-box" id="qrCodeImageBox3">
+          <img src="Images/payement/QRCode.png" alt="QR Code">
+        </div>
+        <button type="submit" class="submit">Submit</button>
+        <div class="purchased"></div>
+      </div>
+    </div>
+
+<!-- 4 -->
+    <div class="column men show">
+      <div class="content">
+        <img src="Images/Men/Party/partywear2.png" alt="Man" >
+      </div>
+      <div class="contentdesc">
+        <h4>JOMPERS</h4>
+        <p>Mandarin Collar Long Kurta</p>
+        <h2><b>&#8377; 1,320</b> </h2>
+        <del> &#8377;3,999</del>
+        <p1> 67% off</p1>
+        <button class="buynow" onclick="showDetails(event, this)">Buy Now</button>
+      </div>
+      <div class="container2">
+        <h2>Enter shipping details</h2>
+        <form class="shippingForm" id="shippingForm4">
+          <label for="address">Shipping Address:</label>
+          <input type="text" id="address4" name="address" required>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone4" name="phone" required pattern="[0-9]{10}"> 
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity4" name="quantity" required min="1" step="1">
+        </form>
+        <br>
+        <h2>Payment Method</h2>
+        <form class="paymentForm form2">
+          <input type="radio" id="cashOnDelivery4" name="payment" value="cashOnDelivery" checked>
+          <label for="cashOnDelivery">Cash on Delivery</label>
+          <input type="radio" id="qrCode4" name="payment" value="qrCode">
+          <label for="qrCode">Pay using QR Code</label>
+        </form>
+        <div class="image-box" id="qrCodeImageBox4">
+          <img src="Images/payement/QRCode.png" alt="QR Code">
+        </div>
+        <button type="submit" class="submit">Submit</button>
+        <div class="purchased"></div>
+      </div>
+    </div>
+
+<!-- 5 -->
+    <div class="column men show">
+      <div class="content">
+        <img src="Images/Men/Party/partywear3.png" alt="Man" >
+      </div>
+      <div class="contentdesc">
+        <h4>TRIKSH</h4>
+        <p>Men's Premium Cotton Blend Cardigan – Shawl Collar Shrug, Lapel Collar, Casual & Warm Winter, Summer Wear</p>
+        <h2><b>&#8377; 299</b> </h2>
+        <del> &#8377;599</del>
+        <p1> 50% off</p1>
+        <button class="buynow" onclick="showDetails(event, this)">Buy Now</button>
+      </div>
+      <div class="container2">
+        <h2>Enter shipping details</h2>
+        <form class="shippingForm" id="shippingForm5">
+          <label for="address">Shipping Address:</label>
+          <input type="text" id="address5" name="address" required>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone5" name="phone" required pattern="[0-9]{10}">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity5" name="quantity" required min="1" step="1">
+        </form>
+        <br>
+        <h2>Payment Method</h2>
+        <form class="paymentForm form2">
+          <input type="radio" id="cashOnDelivery5" name="payment" value="cashOnDelivery" checked>
+          <label for="cashOnDelivery">Cash on Delivery</label>
+          <input type="radio" id="qrCode5" name="payment" value="qrCode">
+          <label for="qrCode">Pay using QR Code</label>
+        </form>
+        <div class="image-box" id="qrCodeImageBox5">
+          <img src="Images/payement/QRCode.png" alt="QR Code">
+        </div>
+        <button type="submit" class="submit">Submit</button>
+        <div class="purchased"></div>
+      </div>
+    </div>
+
+<!-- 6 -->
+    <div class="column women show">
+      <div class="content">
+        <img src="Images/Women/Party/partywear3.png" alt="Woman" >
+      </div>
+      <div class="contentdesc">
+        <h4>Shopaz</h4>
+        <p>Women's Ready to Wear Satin Silk 1 Minute Pre Pleated Heavy Saree with Hand Work Tassels (Rose Gold)</p>
+        <h2><b>&#8377;4,997</b> </h2>
+        <del> &#8377;1,197</del>
+        <p1> 76% off</p1>
+        <button class="buynow" onclick="showDetails(event, this)">Buy Now</button>
+      </div>
+      <div class="container2">
+        <h2>Enter shipping details</h2>
+        <form class="shippingForm" id="shippingForm6">
+          <label for="address">Shipping Address:</label>
+          <input type="text" id="address6" name="address" required>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone6" name="phone" required pattern="[0-9]{10}">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity6" name="quantity" required min="1" step="1">
+        </form>
+        <br>
+        <h2>Payment Method</h2>
+        <form class="paymentForm form2">
+          <input type="radio" id="cashOnDelivery6" name="payment" value="cashOnDelivery" checked>
+          <label for="cashOnDelivery">Cash on Delivery</label>
+          <input type="radio" id="qrCode6" name="payment" value="qrCode">
+          <label for="qrCode">Pay using QR Code</label>
+        </form>
+        <div class="image-box" id="qrCodeImageBox6">
+          <img src="Images/payement/QRCode.png" alt="QR Code">
+        </div>
+        <button type="submit" class="submit">Submit</button>
+        <div class="purchased"></div>
+      </div>
+    </div>
+
+<!-- 7 -->
+    <div class="column women show">
+      <div class="content">
+        <img src="Images/Women/Party/partywear4.png" alt="Woman" >
+      </div>
+      <div class="contentdesc">
+        <h4>Fashion Basket</h4>
+        <p>Semi Stitched Georgette Gown/Anarkali Kurta & Bottom Material Embroidered</p>
+        <h2><b>&#8377;2,399</b> </h2>
+        <del> &#8377;4,999</del>
+        <p1> 52% off</p1>
+        <button class="buynow" onclick="showDetails(event, this)">Buy Now</button>
+      </div>
+      <div class="container2">
+        <h2>Enter shipping details</h2>
+        <form class="shippingForm" id="shippingForm7">
+          <label for="address">Shipping Address:</label>
+          <input type="text" id="address7" name="address" required>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone7" name="phone" required pattern="[0-9]{10}">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity7" name="quantity" required min="1" step="1">
+        </form>
+        <br>
+        <h2>Payment Method</h2>
+        <form class="paymentForm form2">
+          <input type="radio" id="cashOnDelivery7" name="payment" value="cashOnDelivery" checked>
+          <label for="cashOnDelivery">Cash on Delivery</label>
+          <input type="radio" id="qrCode7" name="payment" value="qrCode">
+          <label for="qrCode">Pay using QR Code</label>
+        </form>
+        <div class="image-box" id="qrCodeImageBox7">
+          <img src="Images/payement/QRCode.png" alt="QR Code">
+        </div>
+        <button type="submit" class="submit">Submit</button>
+        <div class="purchased"></div>
+      </div>
+    </div>
+
+<!-- 8 -->
+    <div class="column men show">
+      <div class="content">
+        <img src="Images/Men/Party/partywear4.png" alt="Man" >
+      </div>
+      <div class="contentdesc">
+        <h4>Louis Philippe</h4>
+        <p>Men Maroon Slim Fit Solid Party Three Piece Suit</p>
+        <h2><b>&#8377; 16,999</b> </h2>
+        <del> &#8377;19,999</del>
+        <p1> 17% off</p1>
+        <button class="buynow" onclick="showDetails(event, this)">Buy Now</button>
+      </div>
+      <div class="container2">
+        <h2>Enter shipping details</h2>
+        <form class="shippingForm" id="shippingForm8">
+          <label for="address">Shipping Address:</label>
+          <input type="text" id="address8" name="address" required>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone8" name="phone" required pattern="[0-9]{10}">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity8" name="quantity" required min="1" step="1">
+        </form>
+        <br>
+        <h2>Payment Method</h2>
+        <form class="paymentForm form2">
+          <input type="radio" id="cashOnDelivery8" name="payment" value="cashOnDelivery" checked>
+          <label for="cashOnDelivery">Cash on Delivery</label>
+          <input type="radio" id="qrCode8" name="payment" value="qrCode">
+          <label for="qrCode">Pay using QR Code</label>
+        </form>
+        <div class="image-box" id="qrCodeImageBox8">
+          <img src="Images/payement/QRCode.png" alt="QR Code">
+        </div>
+        <button type="submit" class="submit">Submit</button>
+        <div class="purchased"></div>
+      </div>
+    </div>
+
+<!-- 9 -->
+    <div class="column women show">
+      <div class="content">
+        <img src="Images/Women/Party/partywear5.png" alt="Woman" >
+      </div>
+      <div class="contentdesc">
+        <h4>Glamwitz</h4>
+        <p>One MInute Sequins Designer Saree</p>
+        <h2><b>&#8377;3,899</b> </h2>
+        <del> &#8377;12,199</del>
+        <p1> 69% off</p1>
+        <button class="buynow" onclick="showDetails(event, this)">Buy Now</button>
+      </div>
+      <div class="container2">
+        <h2>Enter shipping details</h2>
+        <form class="shippingForm" id="shippingForm9">
+          <label for="address">Shipping Address:</label>
+          <input type="text" id="address9" name="address" required>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone9" name="phone" required pattern="[0-9]{10}">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity9" name="quantity" required min="1" step="1">
+        </form>
+        <br>
+        <h2>Payment Method</h2>
+        <form class="paymentForm form2">
+          <input type="radio" id="cashOnDelivery9" name="payment" value="cashOnDelivery" checked>
+          <label for="cashOnDelivery">Cash on Delivery</label>
+          <input type="radio" id="qrCode9" name="payment" value="qrCode">
+          <label for="qrCode">Pay using QR Code</label>
+        </form>
+        <div class="image-box" id="qrCodeImageBox9">
+          <img src="Images/payement/QRCode.png" alt="QR Code">
+        </div>
+        <button type="submit" class="submit">Submit</button>
+        <div class="purchased"></div>
+      </div>
+    </div>
+
+<!-- 10 -->
+    <div class="column men show">
+      <div class="content">
+        <img src="Images/Men/Party/partywear5.png" alt="Man" >
+      </div>
+      <div class="contentdesc">
+        <h4>PASHTUSH</h4>
+        <p>Men's Woven Jacquard Waistcoa, Structured Slim Fit, Navy blue</p>
+        <h2><b>&#8377; 3,999</b> </h2>
+        <del> &#8377;8,099</del>
+        <p1> 51% off</p1>
+        <button class="buynow" onclick="showDetails(event, this)">Buy Now</button>
+      </div>
+      <div class="container2">
+        <h2>Enter shipping details</h2>
+        <form class="shippingForm" id="shippingForm10">
+          <label for="address">Shipping Address:</label>
+          <input type="text" id="address10" name="address" required>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone10" name="phone" required pattern="[0-9]{10}">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity10" name="quantity" required min="1" step="1">
+        </form>
+        <br>
+        <h2>Payment Method</h2>
+        <form class="paymentForm form2">
+          <input type="radio" id="cashOnDelivery10" name="payment" value="cashOnDelivery" checked>
+          <label for="cashOnDelivery">Cash on Delivery</label>
+          <input type="radio" id="qrCode10" name="payment" value="qrCode">
+          <label for="qrCode">Pay using QR Code</label>
+        </form>
+        <div class="image-box" id="qrCodeImageBox10">
+          <img src="Images/payement/QRCode.png" alt="QR Code">
+        </div>
+        <button type="submit" class="submit">Submit</button>
+        <div class="purchased"></div>
+      </div>
+    </div>
+  </div>
+  <!-- END GRID -->
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- JavaScript code -->
+<!-- JavaScript code -->
+<script>
+  function showDetails(event, button) {
+    // Prevent the default button behavior (form submission)
+    event.preventDefault();
+
+    // Find the closest parent column of the clicked button
+    var column = button.closest('.column');
+
+    // Toggle between "Buy Now" and "Buy Later" on the button
+    if (button.textContent === 'Buy Now') {
+      button.textContent = 'Buy Later';
+    } else {
+      button.textContent = 'Buy Now';
+
+      // Hide the container2 for the current column
+      var container = column.querySelector('.container2');
+      if (container) {
+        container.style.display = 'none';
+      }
+      return; // Stop further execution if Buy Later is pressed
+    }
+
+    // Hide all container2 elements
+    var containers = document.querySelectorAll('.container2');
+    containers.forEach(function (container) {
+      container.style.display = 'none';
+    });
+
+    // Show container2 for the current column
+    var container = column.querySelector('.container2');
+    if (container) {
+      container.style.display = 'block';
+    }
+  }
+
+  filterSelection("all") // Execute the function and show all columns
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("column");
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (c === "" || x[i].classList.contains(c)) {
+        w3AddClass(x[i], "show");
+      }
+    }
+  }
+
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.classList;
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (!arr1.contains(arr2[i])) {
+        element.classList.add(arr2[i]);
+      }
+    }
+  }
+
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.classList;
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.contains(arr2[i])) {
+        element.classList.remove(arr2[i]);
+      }
+    }
+  }
+
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.querySelector('.btn.active');
+      if (current) {
+        current.classList.remove("active");
+      }
+      this.classList.add("active");
+    });
+  }
+
+  function handleFormSubmission(container) {
+    // Get the selected payment method
+    var paymentMethod = container.querySelector('input[name="payment"]:checked').value;
+
+    // Get the current date
+    var currentDate = new Date();
+
+    // Calculate the delivery date (3 days from the current date)
+    var deliveryDate = new Date(currentDate);
+    deliveryDate.setDate(currentDate.getDate() + 3);
+
+    // Format the delivery date
+    var formattedDeliveryDate = deliveryDate.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+
+    // Display the "purchased" div at the bottom of the screen
+    var purchasedDiv = container.querySelector('.purchased');
+
+    // Reset style properties
+    purchasedDiv.style.position = 'fixed';
+    purchasedDiv.style.bottom = '0';
+    purchasedDiv.style.left = '0';
+    purchasedDiv.style.right = '0';
+    purchasedDiv.style.backgroundColor = 'rgb(8, 255, 8)';
+    purchasedDiv.style.color = 'white';
+    purchasedDiv.style.padding = '15px';
+    purchasedDiv.style.paddingBottom = '25px';
+    purchasedDiv.innerHTML = '';
+
+    // Set the text based on the payment method
+    if (paymentMethod === 'cashOnDelivery') {
+      purchasedDiv.innerHTML = `<b>Purchase Successful! The item will be delivered on ${formattedDeliveryDate}.<br>Cash on Delivery option activated.</b>`;
+    } else if (paymentMethod === 'qrCode') {
+      purchasedDiv.innerHTML = `<b>Your product’s shipping will start once we confirm your successful UPI payment. </b>`;
+    }
+
+    // Display for 5 seconds and then disappear
+    setTimeout(function () {
+      purchasedDiv.style.display = 'none';
+    }, 5000);
+
+    // Reset the form for multiple submissions
+    container.querySelector('form').reset();
+  }
+
+  // Add event listeners to all submit buttons
+  document.querySelectorAll('.submit').forEach(function (button) {
+    button.addEventListener('click', function (event) {
+      // Get the closest parent container2 of the clicked button
+      var container = button.closest('.container2');
+      handleFormSubmission(container);
+    });
+  });
+
+  
+  var qrCodeRadioButton = document.getElementById('qrCode');
+  var qrCodeImageBox = document.getElementById('qrCodeImageBox');
+
+  // Function to handle the display of QR code image box
+// Function to handle the display of QR code image box
+function handlePaymentMethodChange(container) {
+  var qrCodeImageBox = container.querySelector('.image-box');
+
+  // Get the selected payment method
+  var paymentMethod = container.querySelector('input[name="payment"]:checked').value;
+
+  // Toggle the visibility of the QR code image box based on the payment method
+  if (paymentMethod === 'qrCode') {
+    qrCodeImageBox.style.display = 'block';
+  } else {
+    qrCodeImageBox.style.display = 'none';
+  }
+}
+
+// Add event listeners to all payment method radio buttons
+document.querySelectorAll('input[name="payment"]').forEach(function (radioButton) {
+  radioButton.addEventListener('change', function (event) {
+    // Get the closest parent container2 of the clicked radio button
+    var container = event.target.closest('.container2');
+    handlePaymentMethodChange(container);
+  });
+});
+
+// Initial setup to hide QR code image box for all columns
+document.querySelectorAll('.image-box').forEach(function (qrCodeImageBox) {
+  qrCodeImageBox.style.display = 'none';
+});
+</script>
+
+</body>
+</html>
