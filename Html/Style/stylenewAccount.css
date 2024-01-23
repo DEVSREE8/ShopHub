@@ -1,47 +1,78 @@
 body{
-    margin:0px;
+    margin:2px;
+    padding:0px;
+    background-color:rgb(238, 238, 238);
 }
-.navbar{
-    background-color: #2b3336;
-    margin:0px;
+
+.logo{
+    height: 80px;
+    width:80px;
+    margin:8px;
+    padding:0px;
+    border-radius: 8px;
+    position:fixed;
 }
-.navbar>a>img{
-    height:100px;
-    width:120px;
-    margin:0px;
+.logo>a>img{
+    height: 80px;
+    width:80px;
+    border-radius: 8px;
 }
 .regform{
-    margin-top:15px;
-    padding:10px;
-    
+    margin-top:3%;
+    padding-top:20px;
+    padding-bottom:10px;
+    height:470px;
+    width:490px;
+    margin-left:30%;
+    background-color: white;
+    box-shadow: 10px 5px 5px rgb(143, 143, 143);
+    border-radius: 4px;
+    display:inline-block;
 }
 .regform>h2{
     color: #2b3336;
     font-size: 30px;
     font-style: italic;
     font-family:Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-bottom:43px;
+    margin-left:20%;
+    margin-top:0px;
+    
 }
 .regform>form>input{
+    display:block;
     margin-bottom: 20px;
     width:400px;
     height:25px;
-    margin-left:380px;
-    padding:5px;
-    border-radius:30px;
-    border:2px solid #2b3336;
+    margin-left:30px;
+    margin-top: 3px;
+    padding:3px;
+    border-radius:4px;
+    background-color: #f1f1f1;
+    border:none;
+}
+.regform>form>label{
+    display:block;
+    margin-left:30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size:13px;
+    
 }
 button{
-    margin-left:500px;
+    margin-left:120px;
     color:white;
-    background-color: #2b3336;
-    margin-bottom:20px;
+    background-color:#99e125;
+    margin-bottom:10px;
     padding:6px;
-    width:150px;
-    border-radius: 30px;
+    width:250px;
+    border-radius: 4px;
+    border:none;
+    margin-top:10px;
 }
 button:hover{
-    color:#2b3336;
+    color:#99e125;
     background-color:white;
+    border:solid 2px #99e125;
+
 }
 
