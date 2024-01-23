@@ -9,9 +9,12 @@
     <link href="Style2.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+        <div class="logo">
+            <img src="Html/Images/ShopHubLogo.png">
+        </div>
     
         <div class="login-box">
-            <h2>Login to Explore.Shop.Enjoy!</h2>
+            <h2>Login in</h2>
             <br>
             <form onsubmit="loginUser(); return false;"> <!-- Use onsubmit to call the loginUser function -->
                 <input type="email" id="email" name="email" placeholder="E-mail Address" required>
@@ -20,10 +23,10 @@
                 <br><br>
                 <button type="submit">Sign In</button>
             </form>
-            <br>
-            <h5>Or</h5>
-            <br>
-            <button class="sign"><a href="Html/newAccount.html">Sign Up</a></button>
+            <hr><h5>Or</h5><hr>
+        
+            <p>Don't have an account yet?</p>
+            <a href="Html/newAccount.html"> <button class="sign">Sign Up</button></a>
            </div>
 
 
