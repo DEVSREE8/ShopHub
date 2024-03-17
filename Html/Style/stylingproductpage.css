@@ -79,12 +79,14 @@ body{
     text-decoration: none;
     color:inherit;
     border-radius: 20px;
-    box-shadow: 12px 5px 5px  rgb(130, 130, 130);
+    box-shadow: 2px 5px 5px  rgb(130, 130, 130);
 }
 .card>a:hover{
     box-shadow: 10px 5px 5px  rgb(130, 130, 130);
     padding:4px;
     margin-right:4px;
     margin-bottom:4px;
+    border: none;
+    border-radius: 10px;
 }
 
