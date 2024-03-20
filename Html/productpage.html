@@ -9,8 +9,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="theme">
-        <div class="container">
+  <div class="theme" id="divLink">
+    <div class="container">
             <div class="shophubLogo">
                 <p>ShopHub</p>
             </div>
@@ -21,9 +21,15 @@
                     <li><a href="kids.html">Kids</a></li>
                 </ul>
             </div>
-            <div class="logout">
-              <button onclick="logoutUser()">Logout</button>
+     
+          <div class="list">
+            <ul>
+                <li><a href="custo.html">Customize</a></li>
+            </ul>
           </div>
+          <div class="logout">
+            <button onclick="logoutUser()">Logout</button>
+        </div>
         </div>
     </div>
     <!-- ########################################################### -->
@@ -127,16 +133,28 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
 
+
         // Function to handle logout
-        function logoutUser() {
-            firebase.auth().signOut().then(() => {
-                console.log('User signed out successfully');
-                // Redirect to the login page after logout
-                window.location.href = "../index.html";
-            }).catch((error) => {
-                console.error('Error signing out:', error);
+              function logoutUser(event) {
+               event.stopPropagation(); // Prevent the click event from propagating to parent elements
+               firebase.auth().signOut().then(() => {
+               console.log('User signed out successfully');
+              // Redirect to the login page after logout
+              window.location.href = "../index.html";
+         }).catch((error) => {
+              console.error('Error signing out:', error);
             });
         }
+
+        document.querySelector('.logout button').addEventListener('click', logoutUser);
+
+
+      
+        document.getElementById('divLink')
+              .addEventListener('click', function () {
+                window.location.href = 'mens.html';
+        });
+      
     </script>
 </body>
 </html>
